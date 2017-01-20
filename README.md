@@ -12,10 +12,11 @@ Simply download the code (it's not on Nuget yet), reference it and you can call 
   var request = new ForecastRequest(apiKey, 33.518133f, -111.963043f, Unit.us);
   var response = await request.GetAsync();
 
-  return response;
  ```
 This call will return a ```ForecastResponse``` for the current date and time that contains all of the data that the Dark Sky API offers.
 
-You can optionally filter the data returned by using the ```Exclude[]``` filters as well as include more options using the ```Extend[]``` options. The constructor also provides an overload to get the forecast for a specific date.
+You can optionally filter the data returned by using the ```Exclude[]``` filters as well as include more options using the ```Extend[]``` options. The constructor also provides an overload to get the forecast for a specific date. There are also some handy extension methods for dealing with the returned data.
+
+There is also a simple console application included that gives an example of using the client.
 
 
