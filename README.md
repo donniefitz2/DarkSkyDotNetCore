@@ -7,7 +7,7 @@ This library is based on [the one created by @f0xy](https://github.com/f0xy/fore
 Simply download the code (it's not on Nuget yet), reference it and you can call the [Dark Sky API](https://darksky.net/dev/) as outlined below. You must provide your Dark Sky API key with each call and provide latitude and longitude coordinates for forcast location.
 
 ```c#
-  var apiKey = "your-forecast-api-key";
+  var apiKey = "your-dark-sky-api-key";
 
   var request = new ForecastRequest(apiKey, 33.518133f, -111.963043f, Unit.us);
   var response = await request.GetAsync();
