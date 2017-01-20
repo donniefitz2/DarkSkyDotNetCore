@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 
-namespace ForecastNetCore.Model
+namespace DarkSkyDotNetCore.Model
 {
     public class ForecastResponse
     {

@@ -1,4 +1,4 @@
-﻿using ForecastNetCore.Model;
+﻿using DarkSkyDotNetCore.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace ForecastNetCore
+namespace DarkSkyDotNetCore
 {
     public class ForecastRequest
     {
@@ -22,8 +22,8 @@ namespace ForecastNetCore
         private string _apiCallsMade;
         private string _apiResponseTime;
 
-        private const string CurrentForecastUrl = "https://api.forecast.io/forecast/{0}/{1},{2}?units={3}&extend={4}&exclude={5}";
-        private const string PeriodForecastUrl = "https://api.forecast.io/forecast/{0}/{1},{2},{3}?units={4}&extend={5}&exclude={6}";
+        private const string CurrentForecastUrl = "https://api.darksky.net/forecast/{0}/{1},{2}?units={3}&extend={4}&exclude={5}";
+        private const string PeriodForecastUrl = "https://api.darksky.net/forecast/{0}/{1},{2},{3}?units={4}&extend={5}&exclude={6}";
 
         public ForecastRequest(string apiKey, float latF, float longF, Unit unit, Extend[] extend = null, Exclude[] exclude = null)
         {

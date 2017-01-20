@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
-namespace ForecastNetCore.Model
+namespace DarkSkyDotNetCore.Model
 {
-    public class HourForecast
+    public class Currently
     {
         [JsonProperty("time")]
         public Int64 Time { get; set; }
@@ -18,11 +18,9 @@ namespace ForecastNetCore.Model
         public float PrecipIntensity { get; set; }
         [JsonProperty("precipProbability")]
         public float PrecipProbability { get; set; }
-        [JsonProperty("precipType")]
-        public string PrecipType { get; set; }
         [JsonProperty("temperature")]
         public float Temperature { get; set; }
-        [JsonProperty("apparentTemperature")]
+        [JsonProperty("ApparentTemperature")]
         public float ApparentTemperature { get; set; }
         [JsonProperty("dewPoint")]
         public float DewPoint { get; set; }
@@ -40,5 +38,9 @@ namespace ForecastNetCore.Model
         public float Visibility { get; set; }
         [JsonProperty("ozone")]
         public float Ozone { get; set; }
+        [JsonProperty("nearestStormDistance")]
+        public int NearestStormDistance { get; set; }
+        [JsonProperty("nearestStormBearing")]
+        public int NearestStormBearing { get; set; }
     }
 }
