@@ -19,5 +19,16 @@ namespace DarkSkyDotNetCore
             var milliseconds = _input.ToUniversalTime().Subtract(UnixEpoch).TotalSeconds;
             return Convert.ToInt64(milliseconds).ToString();
         }
+
+        public static string ToPercentString(this float value)
+        {
+            var percentValue = value * 100;
+            return $"{percentValue}%";
+        }
+
+        public static int ToWholeNumber(this float value)
+        {
+            return (int)Math.Round((decimal)value, 0);
+        }
     }
 }
