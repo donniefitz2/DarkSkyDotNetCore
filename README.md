@@ -4,7 +4,7 @@ This is a client library for accessing the Dark Sky web API using .Net Core and 
 This library is based on [the one created by @f0xy](https://github.com/f0xy/forecast.io-csharp) with some changes to support async calls and .Net Core.
 
 #Usage#
-Simply download the code (it's not on Nuget yet), reference it and you can call the Dark Sky API as outlined below. You must provide your Dark Sky API key with each call and provide latitude and longitude coordinates for forcast location.
+Simply download the code (it's not on Nuget yet), reference it and you can call the [Dark Sky API](https://darksky.net/dev/) as outlined below. You must provide your Dark Sky API key with each call and provide latitude and longitude coordinates for forcast location.
 
 ```c#
   var apiKey = "your-forecast-api-key";
